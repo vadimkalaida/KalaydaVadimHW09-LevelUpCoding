@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+    <button id="open-calc" onclick="openCalc()"><i class="fa fa-calculator fa-5x" aria-hidden="true"></i></button>
+    <div id="calc">
+            <button class="calc-exit" id="exit" onclick="closeCalc()"><i class="fa fa-times-circle fa-3x" aria-hidden="true"></i></button>
+            <h1>Calculator</h1>
+            <div class="calc__input">
+                <input type="text" name="number1" id="number1" class="calc__input-number1" placeholder="First Number" maxlength="5">
+                <input type="text" name="number2" id="number2" class="calc__input-number2" placeholder="Second Number" maxlength="5">
+            </div>
+            <div class="calc__buttons">
+                <button class="math-button calc__buttons-plus" id="btn1" onclick="mathPlus()"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></button>
+                <button class="math-button calc__buttons-minus" id="btn2" onclick="mathMinus()"><i class="fa fa-minus fa-2x" aria-hidden="true"></i></button>
+                <button class="math-button calc__buttons-multiply" id="btn3" onclick="mathMultiply()"><i class="fa fa-star fa-2x" aria-hidden="true"></i></button>
+                <button class="math-button calc__buttons-devide" id="btn4" onclick="mathDevide()"><i class="fas fa-divide fa-2x"></i></button>
+                <button class="math-button calc__buttons-stepen" id="btn5" onclick="mathStepen()"><i class="fa fa-star fa-2x" aria-hidden="true"></i><i class="fa fa-star fa-2x" aria-hidden="true"></i></button>
+            </div>
+            <div class="calc__result-box">
+                <h2>Result:</h2>
+                <p id="result" class="calc__result-box-res"></p>
+            </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

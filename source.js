@@ -3,7 +3,7 @@ var num1 = 100,
     str = 'Привет от Кекса',
     booleanTrue = true;
 
-console.log(num1 + ' ЧИСЛО');
-console.log(num2 + ' ЧИСЛО');
-console.log(str + ' СТРОКА');
-console.log(booleanTrue + ' ЛОГИЧЕСКОЕ ЗНАЧЕНИЕ');
+console.log(num1 + ' - NUMBER');
+console.log(num2 + ' - NUMBER');
+console.log(str + ' - STRING');
+console.log(booleanTrue + ' - BOOLEAN');
